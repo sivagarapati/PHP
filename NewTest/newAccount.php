@@ -5,16 +5,15 @@ include 'connect.php';
 if (isset($_POST['submit']))
 {
     $firstname = $_POST['firstname'];
-		$lastname = $_POST['lastname'];
-		$dob = $_POST['dob'];
-		$username = $_POST['username'];
-		$password  = $_POST['Password'];
-
-    $sql="insert into student(firstname,lastname,DOB,username,password,) values($firstname','$lastname','$dob','$username','$password',)";
-    mysql_query($sql);
+    $lastname = $_POST['lastname'];
+    $username = $_POST['username'];
+    $password  = $_POST['Password'];
+    
+    $query="insert into student(usernaem,password,firstname,lastname) values('$username','$password','$firstname','$lastname')";
+    $result=mysql_query($sql);
     echo "detailed entered";
 }else{
-    echo "error oocured";
+  
 }
 
 

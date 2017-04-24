@@ -2,7 +2,6 @@
 include 'connect.php';
 //$username=$_POST['username'];
 //$password=$_POST['password'];
-
 $username="username";
 $password="password";
 
